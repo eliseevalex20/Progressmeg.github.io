@@ -6,7 +6,7 @@ $(function(){
     $('.slider_rev').slick({
         
         centerMode: true,
-        centerPadding: '300px',
+        centerPadding: '320px',
         slidesToShow: 1
     })
 })
