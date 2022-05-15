@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
+<body data-spy="scroll">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light navbar_my">
           <div class="container-xxl container-sm">
@@ -34,25 +34,25 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Ассортимент</a>
+                              <a class="nav-link nav_l2" href="file.txt" download="file.txt">Ассортимент</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">О компании</a>
+                              <a class="nav-link nav_l2" href="#section2">О компании</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Преимущества</a>
+                              <a class="nav-link nav_l2" href="#section3">Преимущества</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Ход работы</a>
+                              <a class="nav-link nav_l2" href="#section5">Ход работы</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Партнеры</a>
+                              <a class="nav-link nav_l2" href="#section6">Партнеры</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Отзывы</a>
+                              <a class="nav-link nav_l2" href="#section6">Отзывы</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav_l2" href="#">Контакты</a>
+                              <a class="nav-link nav_l2" href="#section7">Контакты</a>
                             </li>
                         </ul>  
                     </div>
@@ -65,7 +65,7 @@
     <section class = "section1">
         <div class="container-xxl container-sm">
             <div class="row align-items-center">
-                <div class="col-lg-8 offset-lg-0 offset-sm-3">
+                <div class="col-lg-8 offset-lg-0">
                     <h1>
                         Медицинское<br>
                         оборудование<br>
@@ -75,14 +75,14 @@
                         <span style="color: #fff">вашей работы</span>
                     </h1>
                 </div>
-                <div class="col-lg-4 offset-lg-0 offset-sm-5">
-                    <a class="btn btn-primary btn_teleg" href="#" role="button"><img src="img/telega.png" class = "btn_img" alt="telega"> Оформить заказ</a>
+                <div class="col-lg-4 offset-lg-0">
+                    <a class="btn btn-primary btn_teleg" href="https://web.telegram.org" role="button"><img src="img/telega.png" class = "btn_img" alt="telega"> Оформить заказ</a>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="section2">
+    <section class="section2" id="section2">
         <div class="container-xxl container-sm">
            <div class="row">
                <div class="col-lg-8">
@@ -101,7 +101,7 @@
                         </span>
                         <div class="row fot_comp">
                             <div class="col-6">
-                                <a class="btn btn-primary btn_lic" href="#" role="button"><img src="img/licen.png" alt=""> Наши лицензии</a>
+                                <a class="btn btn-primary btn_lic" href="#" role="button" btn_form data-bs-toggle="modal" data-bs-target="#exampleModal3"><img src="img/licen.png" alt=""> Наши лицензии</a>
                             </div>
                             <div class="col-6">
                                 <img src="img/Logo.png" alt="Logo">
@@ -113,7 +113,7 @@
         </div>
     </section>
     
-    <section class="section3">
+    <section class="section3" id="section3">
         <div class="container-xxl container-sm">
            <div class="container">
                <div class="row">
@@ -252,7 +252,7 @@
         </div>
     </section>
     
-    <section class="section4">
+    <section class="section4" id="section4">
         <div class="container-xxl container-sm">
            <div class="row">
                <div class="col-lg-12">
@@ -293,7 +293,7 @@
                         </div>
                         <legend class="legend">Нажимая на кнопку “Отправить заявку”, я соглашаюсь с политикой 
                         конфеденциальности и даю согласие на обработку персональных данных.</legend>
-                        <button type="submit" class="btn btn-primary btn_form">Отправить заявку</button>
+                        <button type="submit" class="btn btn-primary" btn_form data-bs-toggle="modal" data-bs-target="#exampleModal1">Отправить заявку</button>
                     </form>
                 </div>
                 <div class="col-lg-4">
@@ -303,7 +303,7 @@
         </div>
     </section>
     
-    <section class="section5">
+    <section class="section5" id="section5">
         <div class="container-xxl container-sm">
            <div class="row">
                <div class="col-12">
@@ -369,7 +369,7 @@
                                 <img src="img/arrow/second_right.png" alt="arrow">
                             </div>
                             <div class="col-11">
-                                <a class="btn btn-primary btn_section5" href="#" role="button">Заполнить форму</a>
+                                <a class="btn btn-primary btn_section5" href="#section4" role="button">Заполнить форму</a>
                             </div>
                         </div>
                     </div>
@@ -410,7 +410,7 @@
         </div>
     </section>
     
-    <section class="section6">
+    <section class="section6" id="section6">
         <div class="container-xxl container-sm">
             <div class="row align-items-center">
            <div class="col-8 offset-2">
@@ -432,7 +432,7 @@
         </div>
             </div>
             <div class="row">
-                <div class="slider_rev">
+                <div class="responsive">
                     <div class="slide slide_rev">
                         <div class="rev_content">
                             <div class="rev_text">
@@ -483,7 +483,7 @@
         
     </section>
     
-    <section class="section7">
+    <section class="section7" id="section7">
         <div class="container-xxl container-sm">
             <div class="row align-items-center">
                 <div class="col-lg-6 none_padd">
@@ -499,7 +499,7 @@
                                 Вход со стороны Нижней Набережной.</p>
                             <p class="contac_p"><b>Появились вопросы? <br>
                                 Заполните форму обратной связи, мы гарантируем их решение!</b></p>
-                            <a class="btn btn-primary btn_section5" href="#" role="button" style="margin-left: 24%; ">Заполнить форму</a>
+                            <a class="btn btn-primary btn_section5" href="#section4" role="button" style="margin-left: 24%; ">Заполнить форму</a>
                         </div>
                     </div>
                 </div>
@@ -529,17 +529,82 @@
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                           </div>
                           <div class="col-auto">
-                            <a class="btn btn-primary btn_footer" href="#" role="button">Подписаться</a>
+                            <a class="btn btn-primary btn_footer"  role="button" btn_form data-bs-toggle="modal" data-bs-target="#exampleModal2">Подписаться</a>
                           </div>
                     </div>
                 </div>
                 <div class="col-1 right">
-                    <a class="btn btn-primary btn_telega2" href="#" role="button"><img style="width: 25px; margin-right: -10px;" src="img/telega.png" alt=""></a>
+                    <a class="btn btn-primary btn_telega2" href="https://web.telegram.org" role="button"><img style="width: 25px; margin-right: -10px;" src="img/telega.png" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade modal_form" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal_body">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Отлично!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span class="span_modal">
+                Ваша заявка успешно отправленна, в скорем времени с вами свяжутся по указанным контактным данным! 
+                Просим заметить что ответ стоит ждать в будний день с 5:00 до 13:00 по МСК.
+            </span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal_btn" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
+    <div class="modal fade modal_form" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal_body">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Отлично!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span class="span_modal">
+                Вы успешно подписались на нашу новостную рассылку!
+            </span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal_btn" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade modal_form" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal_body">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Отлично!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <span class="span_modal">
+                <div class="responsive">
+                    <div class="slide"><img src="img/inomed.png" alt="inomed" class="brend_img"></div>
+                    <div class="slide"><img src="img/farmsintez.png" alt="inomed" class="brend_img"></div>
+                    <div class="slide"><img src="img/beckman.png" alt="inomed" class="brend_img"></div>
+                    <div class="slide"><img src="img/ozon.png" alt="inomed" class="brend_img"></div>
+                    <div class="slide"><img src="img/medpolimer.png" alt="inomed" class="brend_img"></div>
+                </div>
+            </span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary modal_btn" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     
     
