@@ -10,7 +10,7 @@ $(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+
       }
     },
     {
@@ -18,7 +18,7 @@ $(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+
       }
     },
     {
@@ -26,7 +26,7 @@ $(function(){
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -36,46 +36,27 @@ $(function(){
 }),
     
     
-    $('.slider_brend').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-    })
-    $('.slider_rev').slick({
+  
+    $('.responsive1').slick({
         
         centerMode: true,
         centerPadding: '320px',
         slidesToShow: 1,
         responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 600,
       settings: {
-        centerMode: true,
-        centerPadding: '320px',
-        slidesToShow: 3,
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     },
     {
       breakpoint: 480,
       settings: {
-        centerMode: true,
-        centerPadding: '320px',
-        slidesToShow: 3,
+        centerMode: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
       }
     }
   ]
